@@ -10,7 +10,7 @@ if (fs.existsSync('config.env')) {
 global.api = 'https://nervous-rosamond-jarvis-bot-99587a26.koyeb.app/';
 
 const toBool = (x) => x === 'true';
-const DATABASE_URL = process.env.DATABASE_URL === undefined ? "./database.db" : process.env.DATABASE_URL
+const DATABASE_URL = process.env.DATABASE_URL === undefined ? "mongodb+srv://RavinduNethsara:<db_password>@cluster0.tbytw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0" : process.env.DATABASE_URL
 
 module.exports = {
   VERSION: require('./package.json').version,
